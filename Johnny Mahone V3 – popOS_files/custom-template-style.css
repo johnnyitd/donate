@@ -1,0 +1,1549 @@
+/**
+ * MEEEK CUSTOM FRONTEND STYLES - TABLE OF CONTENTS
+ * 
+ * General Styling
+ * Social links section
+ * About me section
+ * Bio Links section
+ * Element Type: Blog Dropdown
+ * Sharing Panel
+ */
+
+/*General Styling*/
+.relative {
+    position: relative;
+}
+
+.hidden_link {
+    display: none;
+}
+
+a {
+    transition: all 250ms ease-in-out;
+}
+iframe, embed, figure {
+    width: 100%;
+}
+/*Social links section*/
+.meeek-social-media-links-container {
+    display: inline-flex;
+}
+
+.meeek-social-media-links-inner-container:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.1);
+}
+
+.meeek-social-media-links-inner-container {
+    padding: 0px 15px;
+    line-height: 0;
+}
+
+.meeek-social-media-links-inner-container a {
+    color: #323232;
+}
+
+.meeek-social-media-links-inner-container i {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    body .meeek-bio-links-page .meeeksaas-posts-list button {
+        float: none;
+    }
+    .meeek-social-media-links-inner-container {
+        padding: 0px 10px;
+    }
+}
+
+/*About me section*/
+.meeek-about-me-img-holder img {
+    max-width: 25%!important;
+    border-radius: 100%!important;
+}
+
+.meeek-about-me-title {
+    font-size: 25px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.meeek-about-me-description {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+@media only screen and (max-width: 1025px) {
+    .meeek-about-me-description {
+        padding: 0px!important;
+    }
+}
+
+/*Bio Links section*/
+.meeek-about-me-description {
+    color: #000;
+    padding: 0px 60px 0px 60px;
+}
+
+.meeek-bio-links-container-v1:hover,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--waitlist:hover,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--newsletter:hover,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--booking:hover,
+.meeek-bio-links-inner-paypal .meeek-bio-links-paypal:hover,
+.meeek-bio-links-inner-venmo .meeek-bio-links-venmo:hover,
+.meeek-bio-links-inner-phone .meeek-bio-links-phone:hover,
+.meeek-bio-links-inner-container:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.meeek-bio-links-container-v7 .meeek-bio-links-img-holder img,
+.meeek-bio-links-container-v3 .meeek-bio-links-img-holder img,
+.meeek-bio-links-container-v1 .meeek-bio-links-img-holder img,
+.meeek-bio-links-img-holder img {
+    border-radius: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.meeek-bio-links-container-v1 .meeek-bio-links-description,
+.meeek-bio-links-description {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-inline-end: auto;
+    padding: 25px 0px 25px 20px;
+}
+
+.meeek-bio-links-button {
+    color: #000;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.meeek-bio-links-container-v1 .meeek-bio-links-icon,
+.meeek-bio-links-container-v8 .meeek-bio-links-icon,
+.meeek-bio-links-icon {
+    font-size: 30px;
+    color: #323232;
+}
+
+.meeeksaas-single-link-holder .meeeksaas-el-inner--booking a,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--newsletter a,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--waitlist a,
+.meeek-bio-links-inner-paypal a,
+.meeek-bio-links-inner-venmo a,
+.meeek-bio-links-inner-phone a,
+.meeek-bio-links-container-v1 a,
+.meeek-bio-links-container-v2 a,
+.meeek-bio-links-container-v7 a,
+.meeek-bio-links-inner-container a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+/*v1*/
+.meeek-bio-links-inner-container,
+.meeek-bio-links-container-v1 {
+    background: #fff;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid #000;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.meeek-bio-links-container-v1 .meeek-bio-links-button {
+    color: #000;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 5px 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    body .meeek-bio-links-container-v4 .meeek-bio-links-description{
+        padding: 20px 0px 20px 0px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .meeek-bio-links-container-v1 .meeek-bio-links-description {
+        padding: 0px 10px;
+    }
+
+    .meeek-bio-links-container-v1 .meeek-bio-links-description {
+        font-size: 15px;
+    }
+}
+
+/*v2*/
+.meeek-bio-links-container-v2 {
+    background: #1e2330;
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid #1e2330;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.meeek-bio-links-container-v2:hover {
+    background: transparent;
+}
+.meeek-bio-links-container-v4.btn-template-no-label .meeek-bio-links-description {
+    padding-left: 0;
+    padding-right: 0;
+}
+.meeek-bio-links-container-v8 .meeek-bio-links-img-holder img,
+.meeek-bio-links-container-v4 .meeek-bio-links-img-holder img,
+.meeek-bio-links-container-v2 .meeek-bio-links-img-holder img {
+    border-radius: 50px;
+    height: 60px;
+}
+
+.meeek-bio-links-container-v2 .meeek-bio-links-img-holder img {
+    display: flex;
+    justify-content: center;
+}
+
+.meeek-bio-links-container-v2 .meeek-bio-links-description {
+    margin: auto;
+    color: #fff;
+}
+
+.meeek-bio-links-container-v3 .meeek-bio-links-icon,
+.meeek-bio-links-container-v2:hover .meeek-bio-links-description,
+.meeek-bio-links-container-v2 .meeek-bio-links-icon {
+    color: #1e2330;
+}
+
+
+/*v3*/
+.meeek-bio-links-container-v3 {
+    background: #fffaa4;
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid #003727;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.meeek-bio-links-inner-header-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.meeek-bio-links-container-v3 .meeek-bio-links-description {
+    color: #003727;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.meeek-bio-links-container-v3 .meeek-bio-links-button {
+    color: #003727;
+}
+
+.meeek-bio-links-container-v3 .meeek-bio-links-inner-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 8px;
+}
+
+/*v4*/
+
+.meeek-bio-links-container-v4 {
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid #1a1a1a;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.meeek-bio-links-container-v4:hover {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.meeek-bio-links-container-v2 .meeek-bio-links-description,
+.meeek-bio-links-container-v4 .meeek-bio-links-description,
+.meeek-bio-links-description-v5 {
+    padding: 20px 0px 20px 60px;
+}
+
+.meeek-bio-links-container-v4 .meeek-bio-links-description {
+    margin: auto;
+}
+
+
+/*v5*/
+.meeek-bio-links-container-v5 {
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid #000;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    box-shadow: 10px 10px #000;
+    transition: 0.2s;
+}
+
+.meeek-bio-links-container-v4:hover .meeek-bio-links-description,
+.meeek-bio-links-container-v4 .meeek-bio-links-button,
+.meeek-bio-links-container-v4 .meeek-bio-links-icon,
+.meeek-bio-links-description-v5 .meeek-bio-links-button,
+.meeek-bio-links-description-v5 .meeek-bio-links-icon,
+.meeek-bio-links-container-v6 .meeek-bio-links-button,
+.meeek-bio-links-container-v6 .meeek-bio-links-icon,
+.meeek-bio-links-container-v7:hover .meeek-bio-links-description {
+    color: #fff;
+}
+
+/*v6*/
+.meeek-bio-links-container-v6 {
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 0.2rem solid #43192d;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: center;
+    transition: 0.2s;
+    transform: skew(-20deg);
+    max-width: 100%;
+}
+
+.meeek-bio-links-container-v6:hover::after {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: skew(-20deg);
+    transform: scaleX(1.1) scaleY(1.35);
+    opacity: 1;
+}
+
+.meeek-bio-links-container-v6 .meeek-bio-links-description {
+    padding: 20px 0px 20px 0px;
+    transform: skew(20deg);
+    margin-inline-end: inherit;
+}
+
+.meeek-bio-links-container-v6:hover .meeek-bio-links-description {
+    transform: skew(0deg);
+}
+
+
+/*v7*/
+
+.meeek-bio-links-container-v7 {
+    background: #000;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    display: block;
+    border: 2px solid #000;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    opacity: 0.8;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.meeek-bio-links-container-v7 .meeek-bio-links-description {
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+    margin-top: -10px;
+    padding: 20px 0px;
+}
+
+.meeek-bio-links-container-v7 .meeek-bio-links-button {
+    color: #000;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 0px 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.meeek-bio-links-container-v7 .meeek-bio-links-icon {
+    padding: 20px 0px 10px 0px;
+    font-size: 50px;
+    color: #fff;
+}
+
+/* v8 */
+.meeek-bio-links-container-v8 {
+    background: #fff;
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid #fff;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.meeek-bio-links-container-v8 .meeek-bio-links-inner-content {
+    border-radius: 50px;
+}
+
+.meeek-bio-links-container-v8:hover,
+.meeeksaas-single-link--v8 .meeeksaas-el-inner--booking:hover,
+.meeeksaas-single-link--v8 .meeeksaas-el-inner--newsletter:hover,
+.meeeksaas-single-link--v8 .meeeksaas-el-inner--waitlist:hover,
+.meeek-bio-links-inner-paypal-v8 .meeek-bio-links-paypal:hover,
+.meeek-bio-links-inner-venmo-v8 .meeek-bio-links-venmo:hover,
+.meeek-bio-links-inner-phone-v8 .meeek-bio-links-phone:hover, {
+    rotate: 5deg;
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.meeek-bio-links-container-v8 .meeek-bio-links-description {
+    padding: 25px 0px 25px 20px!important;
+}
+
+.meeek-bio-links-container-v8 .meeek-bio-links-button {
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .meeek-bio-links-container-v8 .meeek-bio-links-description {
+        padding: 0px 10px;
+    }
+}
+
+.meeeksaas-single-link-holder .meeeksaas-el-inner--waitlist,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--booking,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--newsletter {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* paypal button */
+.meeek-bio-links-inner-paypal .meeek-bio-links-paypal {
+    background-color: #003087;
+}
+
+.meeek-bio-links-inner-venmo .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone .meeek-bio-links-phone,
+.meeek-bio-links-inner-paypal .meeek-bio-links-paypal {
+    color: #fff;
+}
+
+.meeeksaas-single-link-holder .meeeksaas-el-inner--waitlist,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--booking,
+.meeeksaas-single-link-holder .meeeksaas-el-inner--newsletter,
+.meeek-bio-links-inner-venmo .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone .meeek-bio-links-phone,
+.meeek-bio-links-inner-paypal .meeek-bio-links-paypal {
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid #000;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    padding: 25px 0px 25px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.meeeksaas-single-link--v2 .meeeksaas-el-inner--waitlist,
+.meeeksaas-single-link--v2 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v2 .meeeksaas-el-inner--newsletter,
+.meeek-bio-links-inner-phone-v2 .meeek-bio-links-phone,
+.meeek-bio-links-inner-venmo-v2 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-paypal-v2 .meeek-bio-links-paypal {
+    padding: 20px 58px 20px 60px;
+    border-radius: 50px;
+}
+
+.meeeksaas-single-link--v2 .meeeksaas-el-inner--waitlist:hover,
+.meeeksaas-single-link--v2 .meeeksaas-el-inner--booking:hover,
+.meeeksaas-single-link--v2 .meeeksaas-el-inner--newsletter:hover,
+.meeek-bio-links-inner-venmo-v2 .meeek-bio-links-venmo:hover,
+.meeek-bio-links-inner-phone-v2 .meeek-bio-links-phone:hover,
+.meeek-bio-links-inner-paypal-v2 .meeek-bio-links-paypal:hover {
+    color: #1e2330;
+    background: transparent;
+}
+
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--waitlist,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--newsletter,
+.meeek-bio-links-inner-venmo-v3 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-paypal-v3 .meeek-bio-links-paypal {
+    border-radius: 50px;
+}
+
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--waitlist,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--newsletter,
+.meeek-bio-links-container-v3,
+.meeek-bio-links-inner-venmo-v3 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-paypal-v3 .meeek-bio-links-paypal,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--booking:hover,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--newsletter:hover,
+.meeeksaas-single-link--v3 .meeeksaas-el-inner--waitlist:hover,
+.meeek-bio-links-container-v3:hover,
+.meeek-bio-links-inner-venmo-v3 .meeek-bio-links-venmo:hover,
+.meeek-bio-links-inner-phone-v3 .meeek-bio-links-phone:hover,
+.meeek-bio-links-inner-paypal-v3 .meeek-bio-links-paypal:hover {
+    box-shadow: 10px 10px #003727;
+}
+
+.meeeksaas-single-link--v4 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v4 .meeeksaas-el-inner--newsletter,
+.meeeksaas-single-link--v4 .meeeksaas-el-inner--waitlist,
+.meeek-bio-links-inner-venmo-v4 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone-v4 .meeek-bio-links-phone,
+.meeek-bio-links-inner-paypal-v4 .meeek-bio-links-paypal {
+    border-radius: 50px;
+}
+
+.meeeksaas-single-link--v4 .meeeksaas-el-inner--booking:hover,
+.meeeksaas-single-link--v4 .meeeksaas-el-inner--newsletter:hover,
+.meeeksaas-single-link--v4 .meeeksaas-el-inner--waitlist:hover,
+.meeek-bio-links-inner-venmo-v4 .meeek-bio-links-venmo:hover
+.meeek-bio-links-inner-phone-v4 .meeek-bio-links-phone:hover,
+.meeek-bio-links-inner-paypal-v4 .meeek-bio-links-paypal:hover {
+    background: transparent;
+    border: 2px solid #fff;
+    color: fff;
+}
+
+.meeeksaas-single-link--v5 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v5 .meeeksaas-el-inner--booking:hover,
+.meeeksaas-single-link--v5 .meeeksaas-el-inner--newsletter,
+.meeeksaas-single-link--v5 .meeeksaas-el-inner--newsletter:hover,
+.meeeksaas-single-link--v5 .meeeksaas-el-inner--waitlist,
+.meeeksaas-single-link--v5 .meeeksaas-el-inner--waitlist:hover,
+.meeek-bio-links-container-v5:hover,
+.meeek-bio-links-inner-venmo-v5 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-venmo-v5 .meeek-bio-links-venmo:hover,
+.meeek-bio-links-inner-phone-v5 .meeek-bio-links-phone,
+.meeek-bio-links-inner-phone-v5 .meeek-bio-links-phone:hover,
+.meeek-bio-links-inner-paypal-v5 .meeek-bio-links-paypal,
+.meeek-bio-links-inner-paypal-v5 .meeek-bio-links-paypal:hover {
+    box-shadow: 10px 10px #000;
+}
+
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--newsletter,
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--waitlist,
+.meeek-bio-links-inner-venmo-v6 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone-v6 .meeek-bio-links-phone,
+.meeek-bio-links-inner-paypal-v6 .meeek-bio-links-paypal {
+    border: 0.2rem solid #43192d;
+    justify-content: center;
+    transition: 0.2s;
+    transform: skew(-20deg);
+    max-width: 100%;
+}
+
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--booking:hover::after,
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--newsletter:hover::after,
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--waitlist:hover::after,
+.meeek-bio-links-inner-venmo-v6 .meeek-bio-links-venmo:hover::after,
+.meeek-bio-links-inner-phone-v6 .meeek-bio-links-phone:hover::after,
+.meeek-bio-links-inner-paypal-v6 .meeek-bio-links-paypal:hover::after {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scaleX(1.1) scaleY(1.35);
+    opacity: 1;
+}
+
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--booking::after,
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--newsletter::after,
+.meeeksaas-single-link--v6 .meeeksaas-el-inner--waitlist::after,
+.meeek-bio-links-container-v6::after,
+.meeek-bio-links-inner-venmo-v6 .meeek-bio-links-venmo::after,
+.meeek-bio-links-inner-phone-v6 .meeek-bio-links-phone::after,
+.meeek-bio-links-inner-paypal-v6 .meeek-bio-links-paypal::after {
+    content: '';
+    border: 0.1rem solid #43192d;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.meeek-bio-links-inner-venmo-v6 .meeek-bio-links-venmo-paragraph,
+.meeek-bio-links-inner-phone-v6 .meeek-bio-links-phone-paragraph,
+.meeek-bio-links-inner-paypal-v6 .meeek-bio-links-paypal-paragraph {
+    transform: skew(20deg)!important;
+}
+
+.meeeksaas-single-link--v7 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v7 .meeeksaas-el-inner--newsletter,
+.meeeksaas-single-link--v7 .meeeksaas-el-inner--waitlist,
+.meeek-bio-links-inner-venmo-v7 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone-v7 .meeek-bio-links-phone,
+.meeek-bio-links-inner-paypal-v7 .meeek-bio-links-paypal {
+    border-radius: 20px;
+    padding: 20px 0px;
+    opacity: 0.8;
+    justify-content: center;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+    border: none;
+    font-size: 30px;
+}
+
+.meeeksaas-single-link--v7 .meeeksaas-el-inner--booking:hover,
+.meeeksaas-single-link--v7 .meeeksaas-el-inner--newsletter:hover,
+.meeeksaas-single-link--v7 .meeeksaas-el-inner--waitlist:hover,
+.meeek-bio-links-inner-venmo-v7 .meeek-bio-links-venmo:hover,
+.meeek-bio-links-inner-phone-v7 .meeek-bio-links-phone:hover,
+.meeek-bio-links-container-v7:hover,
+.meeek-bio-links-inner-paypal-v7 .meeek-bio-links-paypal:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.meeeksaas-single-link--v8 .meeeksaas-el-inner--booking,
+.meeeksaas-single-link--v8 .meeeksaas-el-inner--newsletter,
+.meeeksaas-single-link--v8 .meeeksaas-el-inner--waitlist,
+.meeek-bio-links-inner-venmo-v8 .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone-v8 .meeek-bio-links-phone,
+.meeek-bio-links-inner-paypal-v8 .meeek-bio-links-paypal {
+    border-radius: 50px;
+    border: none;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    padding: 25px 0px 25px 20px;
+}
+
+/* Venmo button */
+.meeek-bio-links-venmo-image {
+    width: 25px;
+    height: 25px;
+    vertical-align: baseline!important;
+}
+
+.meeek-bio-links-inner-venmo .meeek-bio-links-venmo {
+    background-color: #276d9f;
+}
+
+
+/* phone number */
+.meeek-bio-links-inner-venmo .meeek-bio-links-venmo,
+.meeek-bio-links-inner-phone .meeek-bio-links-phone {
+    background-color: #1877F2;
+}
+
+
+
+/*Accordion Element*/
+[data-accordion-element-meeek-accordion-content] {
+    height: auto;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.meeek-accordion-card-inner {
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 1px;
+}
+
+.meeek-accordion-title {
+    position: relative;
+    background: #3F51B5;
+    padding: 20px 75px 20px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    overflow: hidden;
+    transition: background 0.3s;
+}
+
+.meeek-accordion-title:hover {
+    cursor: pointer;
+}
+
+.meeek-selected .meeek-accordion-title {
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.meeek-accordion-title:before, .meeek-accordion-title:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -1px;
+    margin-right: 30px;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.meeek-accordion-title:before {
+    transform: rotate(0deg);
+    -webkit-animation: close-line-one-in 0.8s forwards;
+    animation: close-line-one-in 0.8s forwards;
+}
+
+.meeek-selected .meeek-accordion-title:before {
+    -webkit-animation: close-line-one-out 0.8s forwards;
+    animation: close-line-one-out 0.8s forwards;
+}
+
+.meeek-accordion-title:after {
+    transform: rotate(90deg);
+    -webkit-animation: close-line-two-in 0.8s forwards;
+    animation: close-line-two-in 0.8s forwards;
+}
+
+.meeek-selected .meeek-accordion-title:after {
+    -webkit-animation: close-line-two-out 0.8s forwards;
+    animation: close-line-two-out 0.8s forwards;
+}
+
+.meeek-accordion-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all ease-out 0.4s 0.1s;
+}
+
+.meeek-selected .meeek-accordion-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.meeek-collapsed .meeek-accordion-content {
+    display: none;
+}
+
+.meeek-accordion-content {
+    margin: 0px;
+    padding: 30px;
+    background: #fff;
+}
+
+@-webkit-keyframes close-line-one-out {
+    0%, 50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(50px);
+    }
+
+    76% {
+        transform: translateX(50px) translateY(50px);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes close-line-one-out {
+    0%, 50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(50px);
+    }
+
+    76% {
+        transform: translateX(50px) translateY(50px);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes close-line-one-in {
+    0%, 20% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: translateX(50px) translateY(50px) rotate(45deg);
+    }
+
+    61% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes close-line-one-in {
+    0%, 20% {
+        transform: rotate(45deg);
+    }
+
+    60% {
+        transform: translateX(50px) translateY(50px) rotate(45deg);
+    }
+
+    61% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes close-line-two-out {
+    0%, 50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+
+    76% {
+        transform: translateY(-50px) translateX(50px) rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes close-line-two-out {
+    0%, 50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+
+    76% {
+        transform: translateY(-50px) translateX(50px) rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@-webkit-keyframes close-line-two-in {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: translateY(-50px) translateX(50px) rotate(135deg);
+    }
+
+    51% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes close-line-two-in {
+    0% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: translateY(-50px) translateX(50px) rotate(135deg);
+    }
+
+    51% {
+        transform: translateY(-50px) rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+/*Element Type: Blog Dropdown*/
+.meeek-social-media-links-alignment {
+    margin: 20px 0;
+}
+
+.meeek-bio-links-page .meeeksaas-posts-list button {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 15px;
+    margin-left: 10px;
+    float: right;
+}
+
+.meeek-bio-links-page .meeeksaas-posts-list {
+    padding: 0;
+    list-style: none;
+}
+
+.meeek-bio-links-page .meeeksaas-posts-list li:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0 none;
+}
+
+.meeek-bio-links-page .meeeksaas-posts-list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.meeek-bio-links-page .meeeksaas-posts-list a {
+    display: block;
+}
+
+.meeek-bio-links-page .meeeksaas-posts-list img {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.twitter-timeline.twitter-timeline-rendered {
+    width: 100% !important;
+}
+/*Sharing Panel*/
+.meeeksaas-share-panel #meeeksaas-links-panel {
+    right: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 2222222;
+    height: 100%;
+}
+
+.meeeksaas-share-panel #meeeksaas-panel {
+    position: relative;
+    right: -300px;
+}
+
+.meeeksaas-share-panel .meeeksaas-panel_button {
+    position: relative;
+    right: 0px;
+    width: 48px;
+    cursor: pointer;
+    z-index: 10;
+    top: 20%;
+}
+
+.meeeksaas-share-panel .meeeksaas-panel_button a:hover i {
+    opacity: 0.6;
+}
+
+.meeeksaas-share-panel #meeeksaas-panel {
+    overflow-y: scroll;
+    background: white;
+    color: #252525;
+    font-size: 10px;
+    right: -300px;
+    height: 100%;
+    padding: 50px 20px;
+    position: absolute;
+    width: 300px;
+    box-shadow: 0 5px 25px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.meeeksaas-share-panel .meeeksaas-panel_button {
+    background: #FFFFFF none repeat scroll 0 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-top: 15px;
+    box-shadow: -30px 0 30px 0px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 6px 0 0 6px;
+}
+
+.meeeksaas-share-panel .meeeksaas-panel_button i {
+    color: #444;
+    font-size: 17px;
+    transition: all 350ms;
+    text-align: center;
+    width: 100%;
+}
+
+.meeeksaas-share-panel p {
+    font-size: 13px;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+#meeeksaas-panel > h3:first-child {
+    margin-top: 0;
+}
+
+#meeeksaas-panel > h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.meeeksaas-share-panel .meeeksaas-panel_button.meeeksaas_hide_button span,
+.meeeksaas-share-panel .meeeksaas-panel_button a span {
+    font-size: 8px;
+    display: block;
+    font-weight: 500;
+}
+
+.meeeksaas-toggle_sidebar {
+    text-decoration: none;
+}
+
+.meeeksaas-panel_button span {
+    color: #212529;
+    text-transform: uppercase;
+}
+
+.meeeksaas-social-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #0A0B0D;
+    padding: 7px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 350ms;
+    margin-bottom: 7px;
+}
+
+.meeeksaas-social-box a:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translate(0px,-4px);
+}
+
+.meeeksaas-social-btn span i {
+    margin-right: 16px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    width: 30px;
+    transition: all 350ms;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.meeeksaas-social-facebook span i {
+    background-color: #3b5998;
+}
+
+.meeeksaas-social-twitter span i {
+    background-color: #1DA1F2;
+}
+
+.meeeksaas-social-whatsapp span i {
+    background-color: #25D366;
+}
+
+.meeeksaas-social-pinterest span i {
+    background-color: #E60023;
+}
+
+.meeeksaas-social-linkedin span i {
+    background-color: #0077b5;
+}
+
+.meeeksaas-social-telegram span i {
+    background-color: #2AABEE;
+}
+
+.meeeksaas-social-email span i {
+    background-color: #a4a4a4;
+}
+
+.meeeksaas-social-btn:hover span i {
+    background-color: #000;
+    color: #fff;
+}
+
+/*VCARD QR*/
+.meeeksass-vcard-qr-toggle .meeek-accordion-content img {
+    border: 1px solid #ddd;
+}
+
+.meeeksaas_paypal_donation button[type="submit"] {
+    background: #0070BA;
+    border-radius: 50px;
+    padding: 15px 35px;
+    border: 0 none;
+    font-weight: 600;
+}
+
+.meeeksaas-predefined-amount label {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #bfbfbf;
+    padding: 1em 3em;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.meeeksaas-predefined-amount input[type="radio"] {
+    display: none;
+}
+
+ul.meeeksaas-predefined-amount {
+    padding: 0;
+}
+
+.meeeksaas-predefined-amount input[type="radio"][checked],
+.meeeksaas-predefined-amount input[type="radio"]:checked+label {
+    background-color: #2DACAC;
+    border-color: transparent;
+    color: #fff;
+}
+
+.twitter-timeline.twitter-timeline-rendered {
+    width: 100% !important;
+}
+
+.meeeksaas-splash-screen-loader {
+    background: #dddddd;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10003;
+}
+
+.meeeksaas-splash-screen-loader .meeeksaas-preloader-image {
+    top: 45%;
+    left: 45%;
+    position: absolute;
+    transform: scale(1);
+    animation: pulsate 4s infinite both;
+}
+
+@keyframes pulsate {
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/*Edit as admin button*/
+.meeeksaas-edit-as-admin {
+    background: transparent;
+    color: #000;
+    padding: 2px 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/*NSFW*/
+.meeeksaas-modal-nsfw .modal-header {
+    display: block;
+}
+
+.meeeksaas-modal-nsfw a {
+    text-decoration: none;
+}
+
+.meeeksaas-modal-nsfw .meeeksaas-nsfw-yes:hover {
+    background: #709206;
+}
+
+.meeeksaas-modal-nsfw p strong {
+    color: #ff1f1f;
+}
+
+.meeeksaas-modal-nsfw a {
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    outline: 0 !important;
+    background: #8eb908;
+    font-weight: 600;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 10px 28px 15px;
+    text-transform: inherit;
+    border-radius: 1px;
+}
+
+.meeeksaas-modal-nsfw .meeeksaas-nsfw-no {
+    background: transparent;
+    border: 2px solid #666;
+    color: #666;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/*Fixes for WoodMart Theme*/
+.wd-toolbar {
+    display: none !important;
+}
+
+.meeeksaas-top-subscribe-btn:hover{
+    background: #fafafa;
+}
+.meeeksaas-top-subscribe-btn {
+    background: #fff;
+    border-radius: 40px;
+    color: #000 !important;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+}
+.meeek-bio-links-container .meeeksaas-waitlist-form,
+.meeeksaas-subscribe-form {
+    background: #000;
+    padding: 40px;
+    text-align: left;
+}
+form.meeeksaas-booking-form input[type="submit"],
+form.meeeksaas-waitlist-dark-texts input[type="submit"],
+form.meeeksaas-newsletter-dark-texts input[type="submit"]{
+    background: #000;
+    color: #fff;
+}
+form.meeeksaas-waitlist-light-texts input[type="submit"],
+form.meeeksaas-newsletter-light-texts input[type="submit"] {
+    background: #fff;
+    color: #000;
+}
+form.meeeksaas-waitlist-form.meeeksaas-waitlist-dark-texts p a,
+form.meeeksaas-waitlist-form.meeeksaas-newsletter-dark-texts p a,
+form.meeeksaas-subscribe-form.meeeksaas-waitlist-dark-texts p a,
+form.meeeksaas-subscribe-form.meeeksaas-newsletter-dark-texts p a {
+    color: #000;
+}
+form.meeeksaas-waitlist-form.meeeksaas-waitlist-light-texts {
+    background: #000;
+}
+form.meeeksaas-subscribe-form.meeeksaas-newsletter-light-texts a,
+form.meeeksaas-subscribe-form.meeeksaas-newsletter-light-texts p,
+form.meeeksaas-subscribe-form.meeeksaas-newsletter-light-texts label,
+form.meeeksaas-waitlist-form.meeeksaas-waitlist-light-texts a,
+form.meeeksaas-waitlist-form.meeeksaas-waitlist-light-texts p,
+form.meeeksaas-waitlist-form.meeeksaas-waitlist-light-texts label{
+    color: #fff;
+}
+form.meeeksaas-waitlist-form.meeeksaas-waitlist-dark-texts,
+form.meeeksaas-waitlist-form.meeeksaas-newsletter-dark-texts,
+form.meeeksaas-subscribe-form.meeeksaas-waitlist-dark-texts,
+form.meeeksaas-subscribe-form.meeeksaas-newsletter-dark-texts {
+    background: #fff;
+}
+.meeeksaas-waitlist-form input[type="email"],
+.meeeksaas-subscribe-form input[type="email"] {
+    margin-bottom: 12px;
+}
+
+.meeeksaas-booking-form input[type="submit"],
+.meeeksaas-waitlist-form input,
+.meeeksaas-subscribe-form input {
+    width: 100%;
+}
+
+.meeeksaas-booking-form input[type="checkbox"], .meeeksaas-booking-form label,
+.meeeksaas-waitlist-form input[type="checkbox"], .meeeksaas-waitlist-form label,
+.meeeksaas-subscribe-form input[type="checkbox"], .meeeksaas-subscribe-form label {
+    display: inline;
+    width: auto;
+}
+
+.modal.meeeksaas-modal-booking .modal-title,
+.modal.meeeksaas-modal-waitlist .modal-title,
+.modal.meeeksaas-modal-subscribe .modal-title {
+    font-size: 20px;
+}
+
+
+.meeeksaas-booking-form label,
+.meeeksaas-booking-form p,
+.meeeksaas-waitlist-form label,
+.meeeksaas-waitlist-form p,
+.meeeksaas-subscribe-form label,
+.meeeksaas-subscribe-form p {
+    color: #000;
+    font-weight: 300;
+}
+
+.meeeksaas-booking-form p a,
+.meeeksaas-waitlist-form p a,
+.meeeksaas-subscribe-form p a {
+    font-weight: 600;
+    color: #000;
+}
+
+.meeeksaas-waitlist-form h3,
+.meeeksaas-subscribe-form h3 {
+    color: #fff;
+}
+
+.meeeksaas-waitlist-fixed-bar p,
+.meeeksaas-subscribe-fixed-bar p {
+    margin-bottom: 0;
+}
+
+.meeeksaas-waitlist-fixed-bar a,
+.meeeksaas-subscribe-fixed-bar a {
+    color: #000 !important;
+    border: 1px solid #666;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.meeeksaas-waitlist-fixed-bar,
+.meeeksaas-subscribe-fixed-bar {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: #fff !important;
+    color: #000 !important;
+    text-align: center;
+    padding: 20px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.meeeksaas-waitlist-fixed-bar.alert-dismissible .btn-close,
+.meeeksaas-subscribe-fixed-bar.alert-dismissible .btn-close {
+    display: inline-block;
+    background-color: #fff !important;
+    padding: 5px;
+    top: 18px;
+    right: 20px;
+}
+
+.meeeksaas-waitlist-form.meeeksaas-waitlist-dark-texts label,
+.meeeksaas-waitlist-form.meeeksaas-waitlist-dark-texts p,
+.meeeksaas-waitlist-form.meeeksaas-waitlist-dark-texts h3,
+.meeeksaas-waitlist-form.meeeksaas-newsletter-dark-texts label,
+.meeeksaas-waitlist-form.meeeksaas-newsletter-dark-texts p,
+.meeeksaas-waitlist-form.meeeksaas-newsletter-dark-texts h3,
+.meeeksaas-subscribe-form.meeeksaas-waitlist-dark-texts label,
+.meeeksaas-subscribe-form.meeeksaas-waitlist-dark-texts p,
+.meeeksaas-subscribe-form.meeeksaas-waitlist-dark-texts h3,
+.meeeksaas-subscribe-form.meeeksaas-newsletter-dark-texts label,
+.meeeksaas-subscribe-form.meeeksaas-newsletter-dark-texts p,
+.meeeksaas-subscribe-form.meeeksaas-newsletter-dark-texts h3 {
+    color: #000 !important;
+}
+
+.meeeksaas-waitlist-form.meeeksaas-waitlist-dark-texts,
+.meeeksaas-waitlist-form.meeeksaas-newsletter-dark-texts,
+.meeeksaas-subscribe-form.meeeksaas-waitlist-dark-texts,
+.meeeksaas-subscribe-form.meeeksaas-newsletter-dark-texts {
+    background: transparent;
+}
+
+.modal .meeeksaas-waitlist-form,
+.modal .meeeksaas-subscribe-form {
+    padding: 20px 40px;
+}
+
+.meeek-bio-links-container .meeeksaas-waitlist-form,
+.meeek-bio-links-container .meeeksaas-subscribe-form {
+    margin-bottom: 30px;
+}
+
+/*Gallery OWL Style*/
+.meeeksaas-gallery-slider .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.meeeksaas-gallery-slider .owl-dots {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.meeeksaas-gallery-slider .owl-nav button span {
+    font-size: 30px !important;
+    background: #ddd;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 24px;
+    border-radius: 10px;
+}
+
+.owl-carousel.meeeksaas-gallery-slider button.owl-dot.active {
+    background: #666;
+}
+
+.owl-carousel.meeeksaas-gallery-slider button.owl-dot {
+    background: #ddd;
+    height: 10px;
+    width: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.owl-carousel.meeeksaas-gallery-slider .owl-nav button.owl-prev {
+    margin-left: 10px;
+}
+
+.owl-carousel.meeeksaas-gallery-slider .owl-nav button.owl-next {
+    float: right;
+    margin-right: 10px;
+}
+
+.meeeksaas-booking-form-fields label {
+    font-weight: 400;
+}
+.meeeksaas-booking-form-fields textarea {
+    width: 100%;
+    height: 100px;
+}
+.meeeksaas-booking-form-fields input {
+    width: 100% !important;
+}
+
+.meeeksaas-gallery-element h3 {
+    margin: 20px 0 10px 0;
+}
+.meeeksaas-gallery-element .gallery-item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(254, 254, 254, 0.1);
+    padding: 8px 15px;
+    text-align: center;
+}
+.meeek-bio-links-container.meeeksaas-link-v9 > div {
+    margin: 22px 0 !important;
+}
+
+.meeek-bio-links-container.meeeksaas-link-v9 .meeeksaas-simple-link-button .meeek-bio-links-description {
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+}
+.meeek-bio-links-container.meeeksaas-link-v9 .meeek-bio-links-venmo-image {
+    width: 15px;
+    height: 13px;
+}
+.meeek-bio-links-container.meeeksaas-link-v9 .meeeksaas-single-link-holder .meeeksaas-el-inner--newsletter,
+.meeek-bio-links-container.meeeksaas-link-v9 .meeeksaas-single-link-holder .meeeksaas-el-inner--booking,
+.meeek-bio-links-container.meeeksaas-link-v9 .meeeksaas-single-link-holder .meeeksaas-el-inner--waitlist,
+.meeek-bio-links-container.meeeksaas-link-v9 .meeek-bio-links-inner-phone .meeek-bio-links-phone,
+.meeek-bio-links-container.meeeksaas-link-v9 .meeek-bio-links-inner-venmo .meeek-bio-links-venmo,
+.meeek-bio-links-container.meeeksaas-link-v9 .meeek-bio-links-inner-paypal .meeek-bio-links-paypal{
+    border: 0 none;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 16px;
+    margin: 20px 0;
+    transform: none;
+    box-shadow: none;
+}
+.meeek-bio-links-container.meeeksaas-link-v9 .meeeksaas-simple-link-button {
+    border-radius: 16px;
+    margin: 12px 0;
+    transform: none;
+    box-shadow: none;
+}
