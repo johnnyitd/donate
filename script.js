@@ -5,7 +5,7 @@ document.getElementById('alert_1').addEventListener('click', () => {
     html: `
       <div>
         <div class="crypto-address">
-          <span>Биткоин - bc1q7d54vdhqzvxn90qrel2kagnyadeda0zhk0t6fc</span>
+          <span>Биткоин - bc1q4len7sv44fhtch8pq7wc2mrlj2edtk0q0pu9le</span>
           <i class="fab fa-copy"></i>
          </div>
       </div>
@@ -20,7 +20,7 @@ document.getElementById('alert_2').addEventListener('click', () => {
     html: `
       <div>
         <div class="crypto-address">
-          <span>Биткоин - bc1q7d54vdhqzvxn90qrel2kagnyadeda0zhk0t6fc</span>
+          <span>Биткоин - bc1q4len7sv44fhtch8pq7wc2mrlj2edtk0q0pu9le</span>
           <i class="fab fa-copy"></i>
          </div>
       </div>
@@ -35,7 +35,7 @@ document.getElementById('alert_3').addEventListener('click', () => {
     html: `
       <div>
         <div class="crypto-address">
-          <span>Биткоин - bc1q7d54vdhqzvxn90qrel2kagnyadeda0zhk0t6fc</span>
+          <span>Биткоин - bc1q4len7sv44fhtch8pq7wc2mrlj2edtk0q0pu9le</span>
           <i class="fab fa-copy"></i>
          </div>
       </div>
