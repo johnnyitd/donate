@@ -1,3 +1,19 @@
+div:where(.swal2-container) div:where(.swal2-popup) {
+    display:none;
+    position:relative;
+    box-sizing:border-box;
+    grid-template-columns:minmax(0, 100%);
+    width:20em !important;
+    max-width:100%;
+    padding:0 0 1.25em;
+    border:none;
+    border-radius:5px;
+    background:#fff;
+    color:hsl(0,0%,33%);
+    font-family:inherit;
+    font-size:1rem
+  }
+
 img.wp-smiley, img.emoji {
     display: inline !important;
     border: none !important;
